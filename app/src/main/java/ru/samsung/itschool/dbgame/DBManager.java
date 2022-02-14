@@ -55,6 +55,29 @@ public class DBManager {
 		return data;
 	}
 
+	ArrayList<Result> getNotAllResults(int wantedNum, int comparator) {
+
+		ArrayList<Result> data = new ArrayList<Result>();
+		if (comparator == -1){
+			Cursor cursor = db.rawQuery("SELECT * FROM RESULTS WHERE SCORE > " + wantedNum + ";", null);
+		}else if (comparator == 0){
+			Cursor cursor = db.rawQuery("SELECT * FROM RESULTS WHERE SCORE == " + wantedNum + ";", null);
+		}else {
+			Cursor cursor = db.rawQuery("SELECT * FROM RESULTS WHERE SCORE < " + wantedNum + ";", null);
+		}
+		boolean hasMoreData = cursor.moveToFirst();
+
+		while (hasMoreData) {
+			String name = cursor.getString(cursor.getColumnIndex("USERNAME"));
+			int score = Integer.parseInt(cursor.getString(cursor
+					.getColumnIndex("SCORE")));
+			data.add(new Result(name, score));
+			hasMoreData = cursor.moveToNext();
+		}
+
+		return data;
+	}
+
 	private void createTablesIfNeedBe() {
 		db.execSQL("CREATE TABLE IF NOT EXISTS RESULTS (USERNAME TEXT, SCORE INTEGER);");
 	}
