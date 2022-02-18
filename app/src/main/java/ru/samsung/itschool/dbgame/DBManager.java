@@ -58,12 +58,13 @@ public class DBManager {
 	ArrayList<Result> getNotAllResults(int wantedNum, int comparator) {
 
 		ArrayList<Result> data = new ArrayList<Result>();
+		Cursor cursor;
 		if (comparator == -1){
-			Cursor cursor = db.rawQuery("SELECT * FROM RESULTS WHERE SCORE > " + wantedNum + ";", null);
+			cursor = db.rawQuery("SELECT * FROM RESULTS WHERE SCORE > " + wantedNum + ";", null);
 		}else if (comparator == 0){
-			Cursor cursor = db.rawQuery("SELECT * FROM RESULTS WHERE SCORE == " + wantedNum + ";", null);
+			cursor = db.rawQuery("SELECT * FROM RESULTS WHERE SCORE == " + wantedNum + ";", null);
 		}else {
-			Cursor cursor = db.rawQuery("SELECT * FROM RESULTS WHERE SCORE < " + wantedNum + ";", null);
+			cursor = db.rawQuery("SELECT * FROM RESULTS WHERE SCORE < " + wantedNum + ";", null);
 		}
 		boolean hasMoreData = cursor.moveToFirst();
 

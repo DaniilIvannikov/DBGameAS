@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../teacher/Android/Sdk/platforms/android-29/data/res/layout/simple_list_item_1.xml" value="0.18177083333333333" />
+        <entry key="../../../teacher/Android/Sdk/platforms/android-29/data/res/layout/simple_list_item_2.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/activity_ho_f.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/activity_stat.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/list_view_element.xml" value="0.1" />
       </map>
     </option>
   </component>

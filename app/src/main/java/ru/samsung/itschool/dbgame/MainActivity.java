@@ -21,7 +21,8 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle  savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		this.setContentView(R.layout.activity_main);
+		this.setContentView(R.layout.activity_ho_f);
+		//startActivity(new Intent(this, HoFActivity.class));
 		dbManager = DBManager.getInstance(this);
 		Animation anim = AnimationUtils.loadAnimation(this, R.anim.fadin);
 		gameResult = (TextView) this.findViewById(R.id.GameResult);
