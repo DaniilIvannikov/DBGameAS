@@ -30,7 +30,6 @@ public class ResultsRVAdapter extends RecyclerView.Adapter<ResultsRVAdapter.Resu
     public ResultsRVAdapter.ResultsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.list_view_element, parent, false);
         ResultsViewHolder viewHolder = new ResultsViewHolder(v);
-        Toast.makeText(context, "robit?", Toast.LENGTH_SHORT).show();
         return viewHolder;
     }
 
