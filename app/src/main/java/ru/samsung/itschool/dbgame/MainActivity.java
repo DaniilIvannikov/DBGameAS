@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -17,12 +18,12 @@ public class MainActivity extends Activity {
 	EditText playerName;
 	TextView gameResult;
 	ImageButton playButton;
+	Button hofButton;
 
 	@Override
 	protected void onCreate(Bundle  savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		this.setContentView(R.layout.activity_ho_f);
-		//startActivity(new Intent(this, HoFActivity.class));
+		this.setContentView(R.layout.activity_main);
 		dbManager = DBManager.getInstance(this);
 		Animation anim = AnimationUtils.loadAnimation(this, R.anim.fadin);
 		gameResult = (TextView) this.findViewById(R.id.GameResult);

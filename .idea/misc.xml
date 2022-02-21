@@ -6,8 +6,9 @@
         <entry key="../../../teacher/Android/Sdk/platforms/android-29/data/res/layout/simple_list_item_1.xml" value="0.18177083333333333" />
         <entry key="../../../teacher/Android/Sdk/platforms/android-29/data/res/layout/simple_list_item_2.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/activity_ho_f.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/activity_stat.xml" value="0.18177083333333333" />
-        <entry key="app/src/main/res/layout/list_view_element.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/list_view_element.xml" value="0.25" />
       </map>
     </option>
   </component>
@@ -52,7 +53,7 @@
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" project-jdk-name="14" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="true" project-jdk-name="14" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
